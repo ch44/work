@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="422.0" prefWidth="674.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <AnchorPane layoutX="-3.0" layoutY="-2.0" prefHeight="94.0" prefWidth="659.0" style="-fx-background-color: green;">
+         <children>
+            <Label layoutX="271.0" layoutY="5.0" style="-fx-text-fill: white;" text="MovieRatings">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Button layoutX="593.0" layoutY="-1.0" mnemonicParsing="false" text="Log out" />
+            <TextField fx:id="searchBar" layoutX="476.0" layoutY="69.0" prefHeight="25.0" prefWidth="184.0" promptText="Search...                     " />
+         </children>
+      </AnchorPane>
+      <TableView layoutY="92.0" prefHeight="328.0" prefWidth="660.0">
+        <columns>
+          <TableColumn fx:id="MID" prefWidth="68.0" text="ID" />
+          <TableColumn fx:id="MTitle" prefWidth="245.0" text="Title" />
+            <TableColumn fx:id="MGenre" prefWidth="134.0" text="Genre" />
+            <TableColumn fx:id="MYear" prefWidth="112.0" text="Year" />
+            <TableColumn fx:id="MRating" prefWidth="97.0" text="Rating" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
